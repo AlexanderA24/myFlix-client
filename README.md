@@ -1,2 +1,2 @@
 To bundle project
-Execute parcel src/index.html 
+parcel src/index.html 
