@@ -9,7 +9,7 @@ export class MovieView extends React.Component {
         return (
             <div className="movie-view">
                 <div className="movie-poster">
-                    <img src={movie.ImagePath} />
+                    <img style={{ width: "50%", height: "60%" }} crossOrigin="anonymous" src={movie.imageurl} />
                 </div>
                 <div className="movie-title">
                     <span className="label">Title: </span>
@@ -29,7 +29,7 @@ MovieView.propTypes = {
     movie: PropTypes.shape({
         Title: PropTypes.string.isRequired,
         Description: PropTypes.string.isRequired,
-        ImagePath: PropTypes.string.isRequired
+        imageurl: PropTypes.string.isRequired
     }).isRequired,
     onMovieClick: PropTypes.func.isRequired
 };
